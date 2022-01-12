@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:text = "강의실 위치 정보"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+        <!--텍스트뷰 폰트 검정, 폰트 사이즈30sp, 굵게 설정-->
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt"
+        android:layout_marginTop="30dp"
+        android:text="
+        *기계공학부 \n
+        기계과 5-207  기계설계과 6-115호  \n
+        메카트로닉스과 11-306\n\n
+        *수송기계학부 \n
+        조선해양과 5-101  자동차과 11-306  항공기계과 6-315\n\n
+        *정보산업공학부 \n
+        전기정보과 5-307  디지털전자과 7-411  \n
+        정보통신과 6-116 \n\n
+        *컴퓨터정보공학부 \n
+        컴퓨터정보과 7-407A  컴퓨터시스템과 7-407B \n\n
+        *지구환경공학부 \n
+        토목환경과 2-206A  항공지리정보과 5-401 \n\n
+        *건축학부\n
+        건축과 7-303  실내건축과 10-307B \n\n
+        *신소재공학부 \n
+        화공환경과 6-113A  금속재료과 6-113B \n\n
+        *서비스학부 \n
+        항공운항과 1-402B  항공경영과 1-402A \n
+        관광경영과 1-302B \n
+        호텔경영과 1-302C  비서과 1-302A\n\n
+        *디자인학부 \n
+        산업디자인과 2-206B 패션디자인과 2-501B"
+
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        />
+
+
+</RelativeLayout>

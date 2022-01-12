@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"
+    : 이게 있어야 버튼 색상 변경 가능-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="120dp"
+        android:text="Inha Map"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+    <!--@+id/textView : 텍스트뷰 아이디
+    가로는 부모영역에 맞추고 세로는 내용물의 크기에 맞춤
+    alignParentTop = "true" : 가장 상단에 위치
+    center_horizontal : 가운데 정렬
+    (width, height과 모두wrap_content일 경우 적용x -> 이동할 곳이 없어서)
+    30sp : 텍스트 크기-->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="297dp"
+        android:layout_height="290dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/mapimg"/>
+    <!--src : 이미지 파일 경로
+    layout_centerHorizontal="true": 가운데 정렬-->
+
+    <!-- GO! 액티비티로 전환하는 버튼 -->
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp"
+        android:background="#DADA"
+        android:onClick="onClick1"
+        android:text=" 지도 보기 "
+        android:textSize="20dp"
+        tools:backgroundTint="#CBE3BB" />
+    <!--backgroundTint : 버튼 배경색 지정,
+    android:background="#DADA" 사용후 적용 -->
+
+    <!-- 호관 정보로 전환하는 버튼 -->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_toRightOf="@id/button1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:background="#DADA"
+        android:onClick="onClick2"
+        android:text=" 학교 정보 "
+        android:textSize="20dp"
+        tools:backgroundTint="#CBE3BB" />
+    <!--backgroundTint : 버튼 배경색 지정,
+    android:background="#DADA" 사용후 적용 -->
+</RelativeLayout>
